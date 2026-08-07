@@ -1,216 +1,188 @@
-# Backend Interview Bible
+﻿# Backend Interview Bible
 
-> Java 백엔드 개발자를 위한 실무 중심 기술 핸드북 프로젝트
+> Java 백엔드 개발자를 위한 실무·운영·면접 중심의 Obsidian 기술 핸드북
 
----
+## 프로젝트 소개
 
-# 프로젝트 소개
+Backend Interview Bible은 단순한 기술 노트가 아니라 Java 백엔드 개발자가 실무 역량과 기술 면접을 함께 준비하기 위한 장기 지식 베이스다.
 
-Backend Interview Bible은 단순한 기술 노트가 아닙니다.
+각 문서는 개념 정의에 그치지 않고 다음을 연결해서 설명한다.
 
-Java 백엔드 개발자가 실무 역량과 기술 면접을 동시에 준비할 수 있도록 만드는 장기 프로젝트입니다.
+- 기술이 등장한 배경과 해결하려는 문제
+- 내부 동작 원리와 구현상의 경계
+- 장단점과 설계 트레이드오프
+- 성능, 메모리, 동시성 영향
+- 운영 장애와 문제 해결 절차
+- 실무 활용 사례와 모범 사례
+- 면접 질문, 후속 질문, 시니어 수준의 답변
 
-이 저장소의 모든 문서는 다음 목표를 가지고 작성됩니다.
+## 대상 독자
 
-- 실무에서 사용하는 기술 이해
-- 기술 면접 대비
-- 운영 환경(Production) 관점 이해
-- 백엔드 아키텍처 이해
-- 지속적으로 성장 가능한 기술 문서 구축
+- Java 및 Spring 백엔드 개발자
+- 약 8~10년 수준의 운영 경험을 체계화하려는 개발자
+- 대기업·금융 IT·플랫폼 기업의 기술 면접 준비자
+- JVM, Database, Network, System Design을 깊이 학습하려는 개발자
+- Obsidian과 GitHub로 장기 기술 문서를 관리하려는 개발자
 
----
+## 기술 기준
 
-# 프로젝트 목표
-
-이 프로젝트의 최종 목표는 다음과 같습니다.
-
-- Java 백엔드 핵심 기술 정리
-- Spring 생태계 정리
-- JVM 심화 학습
-- 운영 경험(Production Experience) 정리
-- 시스템 설계(System Design) 정리
-- 기술 면접 대비
-
-최종적으로 하나의 백엔드 기술 핸드북을 완성하는 것을 목표로 합니다.
-
----
-
-# 프로젝트 특징
-
-이 프로젝트는 일반적인 기술 블로그와 다릅니다.
-
-모든 문서는 다음 기준을 만족해야 합니다.
-
-- 왜(Why)를 설명한다.
-- 어떻게(How)를 설명한다.
-- 언제 사용하는지 설명한다.
-- 언제 사용하면 안 되는지 설명한다.
-- 실무 사례를 설명한다.
-- 운영 중 발생하는 문제를 설명한다.
-- 성능 관점을 설명한다.
-- 기술 면접 질문을 포함한다.
-
----
-
-# 대상 독자
-
-다음과 같은 개발자를 대상으로 합니다.
-
-- Java 백엔드 개발자
-- Spring 개발자
-- 취업 준비생
-- 이직 준비 중인 개발자
-- 기술 면접 준비생
-- 백엔드 아키텍처를 공부하는 개발자
-
----
-
-# 기술 스택
-
-기본 기준은 다음과 같습니다.
-
-| 항목 | 버전 |
-|------|------|
+| 항목 | 기본 기준 |
+|---|---|
 | Java | 17 LTS |
 | Spring Framework | 6.x |
 | Spring Boot | 3.x |
-| JPA | Hibernate 6+ |
-| Build Tool | Gradle(Kotlin DSL 권장) |
+| JPA 구현 | Hibernate 6.x |
+| Build Tool | Gradle Kotlin DSL 권장 |
+| 저장 형식 | UTF-8 Markdown |
 
-필요한 경우 Java 21 이상의 기능은 별도 섹션에서 설명합니다.
+Java 21 이상의 기능은 해당 주제에서 버전을 명시해 별도로 설명할 수 있다. 세부 버전과 구현 동작은 로컬에서 검증할 수 없는 경우 단정하지 않는다.
 
----
-
-# 문서 구성
-
-예시
+## 프로젝트 구조
 
 ```text
-01-Java-Core
-02-JVM
-03-Collections
-04-Concurrency
-05-Spring
-06-Spring-Boot
-07-JPA
-08-Database
-09-Redis
-10-Kafka
-11-System-Design
-12-Architecture
-...
+Backend Handbook/
+├── AGENTS.md
+├── README.md
+├── PROBLEM-INDEX.md
+├── HANDBOOK-INDEX.md
+├── ROADMAP.md
+├── CODEX-PROMPT-GUIDE.md
+├── 01-Java-Core/
+├── 02-Spring/
+├── 03-Database/
+├── 04-Data-Structure/
+├── 05-Algorithm/
+├── 06-JVM/
+├── 07-Network/
+├── 08-Operating-System/
+├── 09-System-Design/
+├── 10-Project-Experience/
+├── 11-Behavioral/
+└── assets/
+    ├── images/
+    └── diagrams/
 ```
 
----
+Git은 빈 디렉터리를 추적하지 않는다. 아직 장이 없는 볼륨의 `KEEP.txt`와 `.gitkeep`은 GitHub에서 폴더 구조를 유지하기 위한 관리 파일이며 핸드북 장이 아니다.
 
-# 문서 작성 원칙
+## 볼륨 안내
 
-모든 문서는 다음 원칙을 따릅니다.
+| 볼륨 | 내용 |
+|---|---|
+| `01-Java-Core` | Java 언어, 표준 라이브러리, 컬렉션, 동시성 |
+| `02-Spring` | Spring Framework, Spring Boot, JPA, Hibernate |
+| `03-Database` | 관계형 데이터베이스, SQL, 트랜잭션, 잠금, 성능 |
+| `04-Data-Structure` | 자료구조 이론과 구현 트레이드오프 |
+| `05-Algorithm` | 알고리즘, 복잡도, 문제 해결 기법 |
+| `06-JVM` | JVM 구조, 메모리, GC, JIT, 튜닝 |
+| `07-Network` | TCP/IP, HTTP, TLS, DNS, 서버 통신 |
+| `08-Operating-System` | 프로세스, 스레드, 메모리, 스케줄링, I/O |
+| `09-System-Design` | 분산 시스템, 확장성, 신뢰성, 관측 가능성 |
+| `10-Project-Experience` | 운영 장애, 마이그레이션, 최적화, 프로젝트 경험 |
+| `11-Behavioral` | 리더십, 협업, 커뮤니케이션, Ownership |
 
-- 정확성을 최우선으로 한다.
-- 실무 중심으로 설명한다.
-- 운영 환경 관점을 포함한다.
-- 성능을 고려한다.
-- 단순 정의보다 동작 원리를 설명한다.
-- 코드 예제를 포함한다.
-- 기술 면접 관점에서 설명한다.
+## 핵심 운영 문서
 
----
+| 문서 | 역할 |
+|---|---|
+| [[AGENTS]] | Codex와 AI가 반드시 따라야 하는 영구 프로젝트 규칙 |
+| [[PROBLEM-INDEX]] | 001~350번 주제, 난이도와 작성 상태 관리 |
+| [[HANDBOOK-INDEX]] | 실제로 생성된 장을 볼륨별로 탐색하는 목차 |
+| [[ROADMAP]] | 볼륨별 장기 계획과 구조 관리 |
+| [[CODEX-PROMPT-GUIDE]] | 최초 설정, 번호 생성, 검토 및 완료 처리용 프롬프트 |
 
-# 프로젝트 구조
-
-```text
-Backend-Interview-Bible/
-
-README.md
-AGENTS.md
-STYLE-GUIDE.md
-PROMPT.md
-CODEX-WORKFLOW.md
-QUALITY-CHECKLIST.md
-CODEX-PROMPT-GUIDE.md
-
-PROBLEM-INDEX.md
-HANDBOOK-INDEX.md
-
-01-Java-Core/
-02-JVM/
-03-Collections/
-04-Concurrency/
-05-Spring/
-06-Spring-Boot/
-...
-```
-
----
-
-# 문서 관리
-
-## PROBLEM-INDEX.md
-
-작성해야 할 문서를 관리합니다.
-
-상태는 다음과 같습니다.
+## 문제 상태
 
 | 상태 | 의미 |
-|------|------|
+|---|---|
 | ⬜ | 미작성 |
-| 🟨 | 문서 생성 완료 |
-| 🟩 | ChatGPT 기술 검토 완료 |
+| 🟨 | 문서 생성 및 자체 검증을 마친 초안 |
+| 🟩 | 기술 검토와 최종 검증을 마친 완료 문서 |
+| 🔁 | 수정 필요 |
+| ⭐ | 즐겨찾기 |
+| ❓ | 복습 필요 |
 
----
+기본 상태 전이는 다음과 같다.
 
-## HANDBOOK-INDEX.md
+```text
+⬜ → 문서 하나 생성 및 자체 검증 → 🟨
+🟨 → 기술 리뷰와 수정 및 최종 검증 → 🟩
+검토 중 문제 발견 → 🔁
+```
 
-생성된 문서를 관리합니다.
+## Codex 사용법
 
-폴더별 문서 목록과 링크를 제공합니다.
+새 PC나 새 Codex 세션에서는 먼저 [[CODEX-PROMPT-GUIDE#1 최초 실행 프롬프트|최초 실행 프롬프트]]를 사용한다.
 
----
+환경 확인이 끝난 뒤에는 다음처럼 요청할 수 있다.
 
-# 문서 생성 프로세스
+```text
+003번 생성
+```
 
-문서는 다음 순서로 작성됩니다.
+```text
+next
+```
 
-1. 작성 대상 선정
-2. 기존 문서 중복 확인
-3. 문서 생성
-4. 자가 검토(Self Review)
-5. ChatGPT 기술 검토
-6. 수정
-7. Git Commit
+```text
+status
+```
 
----
+- `NNN번 생성`: `PROBLEM-INDEX.md`의 해당 번호 하나만 생성
+- `next`: 상태가 `⬜`인 가장 빠른 번호 하나만 생성
+- `status`: 전체 문제와 상태별 개수, 현재 초안, 다음 미작성 번호 확인
 
-# 품질 기준
+한 번의 생성 요청에서는 장 하나만 작성한다. 파일이 이미 존재하거나 인덱스 상태와 실제 파일이 충돌하면 덮어쓰지 않고 작업을 중단한다.
 
-모든 문서는 **001. Java Architecture** 문서를 기준(Baseline)으로 합니다.
+## 문서 생성 워크플로우
 
-새로운 문서는 최소한 다음 수준 이상의 품질을 유지해야 합니다.
+1. `AGENTS.md`, `README.md`, `PROBLEM-INDEX.md`를 확인한다.
+2. 요청 번호의 주제와 상태를 확인한다.
+3. 동일 번호, 동일 파일명과 유사 주제 문서를 검색한다.
+4. 실제 폴더 구조에 맞는 저장 위치를 결정한다.
+5. 한국어 UTF-8 Markdown 장 하나를 생성한다.
+6. 기술 내용, 코드, Markdown, Mermaid와 Wiki Link를 자체 검증한다.
+7. 성공한 경우 해당 번호 상태만 `⬜ → 🟨`로 변경한다.
+8. `HANDBOOK-INDEX.md`의 올바른 볼륨과 `Recently Added`를 갱신한다.
+9. 외부 기술 검토와 수정이 끝난 후에만 `🟨 → 🟩`로 변경한다.
 
-- 기술적 깊이
-- 실무 활용성
-- 운영 경험
-- 성능 분석
-- 기술 면접 활용도
+자세한 실행 프롬프트는 [[CODEX-PROMPT-GUIDE]]를 참고한다.
 
----
+## 품질 기준
 
-# 저장소 운영 문서
+모든 장은 [[01-Java-Core/001-Java-Architecture|Java 아키텍처]] 문서를 기본 품질 기준으로 삼는다.
 
-| 문서 | 설명 |
-|------|------|
-| AGENTS.md | 프로젝트 운영 규칙 |
-| STYLE-GUIDE.md | 문서 작성 규칙 |
-| PROMPT.md | Codex 작업 지침 |
-| CODEX-WORKFLOW.md | 문서 생성 절차 |
-| QUALITY-CHECKLIST.md | 품질 검증 기준 |
-| CODEX-PROMPT-GUIDE.md | 프롬프트 예제 |
+- 정확성과 검증 가능성을 우선한다.
+- Java 명세, JVM 구현, Framework 동작과 일반적인 구현 선택을 구분한다.
+- 운영 사고나 벤치마크 수치, 특정 회사 질문을 만들어 내지 않는다.
+- 실무 사례가 가상이면 예시임을 밝힌다.
+- 존재하거나 명시적으로 계획된 문서에만 Obsidian Wiki Link를 추가한다.
+- 주제와 관련 없는 Spring 예제나 빈 템플릿 섹션을 억지로 넣지 않는다.
 
----
+## Obsidian과 GitHub 사용
 
-# 라이선스
+이 디렉터리를 Obsidian에서 **Open folder as vault**로 연다. 문서 작성 전에 원격 변경을 Pull하고, 작업이 끝나면 Commit과 Push를 수행한다.
 
-본 프로젝트는 개인 학습 및 기술 문서 작성을 목적으로 합니다.
+권장 흐름은 다음과 같다.
 
-필요에 따라 라이선스를 추가하여 관리합니다.
+```text
+GitHub Desktop에서 Pull
+→ Obsidian 또는 Codex에서 문서 작업
+→ 변경 내용 확인
+→ Commit
+→ Push origin
+```
+
+다른 PC에서는 GitHub 저장소를 Clone한 뒤 Clone된 폴더를 Obsidian Vault로 열면 된다. 여러 PC에서 같은 파일을 동시에 수정하면 충돌할 수 있으므로 작업 시작 전 Pull을 습관화한다.
+
+## Navigation
+
+- [[HANDBOOK-INDEX|완성된 문서 목차]]
+- [[PROBLEM-INDEX|전체 문제 목록과 상태]]
+- [[ROADMAP|전체 작성 로드맵]]
+- [[CODEX-PROMPT-GUIDE|Codex 프롬프트 가이드]]
+- [[AGENTS|문서 작성 및 관리 규칙]]
+
+## 라이선스
+
+이 프로젝트는 개인 학습 및 기술 문서 작성을 목적으로 한다. 외부 공개와 재사용 범위는 저장소에 별도 라이선스를 추가해 관리한다.

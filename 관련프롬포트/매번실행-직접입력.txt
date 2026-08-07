@@ -1,0 +1,52 @@
+Work only in the following project:
+
+C:\ua-setup\ResumeSkills-main\Backend Handbook
+
+Read and follow AGENTS.md before doing anything.
+
+## Requested Chapter
+
+HashMap.md
+
+The value under `Requested Chapter` may be an exact Markdown file name or a topic.
+
+Perform the normal chapter-generation workflow defined in AGENTS.md.
+
+Requirements:
+
+* Inspect ROADMAP.md, HANDBOOK-INDEX.md, and existing Markdown files.
+* Search for an existing or duplicate chapter.
+* Determine the correct destination volume automatically.
+* When ROADMAP.md specifies a destination path, use that path.
+* Do not require me to provide a volume.
+* Report the intended destination path before creating the file.
+* Create exactly one Markdown chapter.
+* Do not overwrite an existing file.
+* Do not modify unrelated files.
+* Use Obsidian-compatible Markdown and valid Wiki Links.
+* Follow all accuracy, structure, code, and interview-quality rules from AGENTS.md.
+
+After the chapter has been created successfully:
+
+1. Verify that the file exists and is not empty.
+2. Validate its H1 heading and main sections.
+3. Mark only the matching ROADMAP.md item as completed.
+4. Add the chapter to the correct volume section in HANDBOOK-INDEX.md.
+5. Add it to `Recently Added` in HANDBOOK-INDEX.md.
+6. Keep no more than ten entries in `Recently Added`.
+7. Do not add duplicate index entries.
+8. Do not add links to nonexistent files.
+9. Do not update README.md unless the project structure changed.
+10. Do not modify unrelated roadmap or index entries.
+
+After completion, report:
+
+* Created file path
+* Automatically selected volume
+* ROADMAP.md update
+* HANDBOOK-INDEX.md update
+* Related documents linked
+* Duplicate checks performed
+* Any uncertain or unverified version-specific claims
+
+Do not generate another chapter.

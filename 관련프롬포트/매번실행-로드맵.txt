@@ -1,0 +1,59 @@
+Work only in the following project:
+
+C:\ua-setup\ResumeSkills-main\Backend Handbook
+
+Read and follow AGENTS.md before doing anything.
+
+Continue the Backend Interview Bible using ROADMAP.md.
+
+## Task
+
+Find the first valid unfinished chapter in ROADMAP.md and create it.
+
+Requirements:
+
+* Inspect ROADMAP.md, HANDBOOK-INDEX.md, and existing Markdown files.
+* Select only an unchecked chapter item marked with `[ ]`.
+* Skip headings, descriptions, comments, and malformed entries.
+* If the roadmap item contains a destination path, use it.
+* Otherwise determine the correct destination volume automatically.
+* Search for an existing or duplicate chapter before creating anything.
+* Create no more than one chapter.
+* Do not overwrite an existing chapter.
+* Do not modify unrelated files.
+* Use Obsidian-compatible Markdown and valid Wiki Links.
+* Follow all accuracy, structure, code, and interview-quality rules from AGENTS.md.
+
+If the requested chapter file already exists:
+
+1. Validate the existing chapter instead of overwriting it.
+2. Confirm that the file is not empty and has a valid H1 heading.
+3. Mark the matching roadmap item complete only if the chapter is valid.
+4. Add it to HANDBOOK-INDEX.md only if it is not already listed.
+
+After successfully creating or validating the chapter:
+
+1. Update only the matching ROADMAP.md checkbox.
+2. Add the chapter to the matching volume section in HANDBOOK-INDEX.md.
+3. Add it to the `Recently Added` section.
+4. Keep no more than ten `Recently Added` entries.
+5. Do not create duplicate index entries.
+6. Do not add links to nonexistent files.
+7. Do not update README.md unless the project structure changed.
+
+After completion, report:
+
+* Selected roadmap item
+* Created or validated file path
+* Automatically selected volume
+* ROADMAP.md update
+* HANDBOOK-INDEX.md update
+* Related documents linked
+* Duplicate checks performed
+* Any uncertain or unverified version-specific claims
+
+If ROADMAP.md has no valid unfinished chapter, do not invent a new topic.
+
+Report that no unfinished chapter is available.
+
+Do not generate another chapter.

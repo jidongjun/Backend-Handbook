@@ -1,4 +1,4 @@
-﻿# Backend Interview Bible
+# Backend Interview Bible
 
 > Java 백엔드 개발자를 위한 실무·운영·면접 중심의 Obsidian 기술 핸드북
 
@@ -86,7 +86,7 @@ Git은 빈 디렉터리를 추적하지 않는다. 아직 장이 없는 볼륨�
 | 문서 | 역할 |
 |---|---|
 | [[AGENTS]] | Codex와 AI가 반드시 따라야 하는 영구 프로젝트 규칙 |
-| [[PROBLEM-INDEX]] | 001~350번 주제, 난이도와 작성 상태 관리 |
+| [[PROBLEM-INDEX]] | 001~450번 주제, 난이도와 작성 상태 관리 |
 | [[HANDBOOK-INDEX]] | 실제로 생성된 장을 볼륨별로 탐색하는 목차 |
 | [[ROADMAP]] | 볼륨별 장기 계획과 구조 관리 |
 | [[CODEX-PROMPT-GUIDE]] | 최초 설정, 번호 생성, 검토 및 완료 처리용 프롬프트 |

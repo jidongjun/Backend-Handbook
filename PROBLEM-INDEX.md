@@ -2,7 +2,7 @@
 
 > Java Backend Interview Handbook
 >
-> Total: 350 Problems
+> Total: 450 Problems
 
 ---
 
@@ -26,10 +26,10 @@
 | 🟨  | 001 | Java Architecture             | ⭐   | 🔥🔥   | 20m |
 | 🟨  | 002 | JVM vs JRE vs JDK             | ⭐   | 🔥🔥🔥 | 20m |
 | 🟨  | 003 | Java Compilation Process      | ⭐⭐  | 🔥🔥   | 30m |
-| ⬜   | 004 | Class File & Bytecode         | ⭐⭐  | 🔥🔥   | 30m |
-| ⬜   | 005 | Object Class                  | ⭐   | 🔥🔥🔥 | 20m |
-| ⬜   | 006 | String                        | ⭐⭐  | 🔥🔥🔥 | 40m |
-| ⬜   | 007 | String Pool                   | ⭐⭐⭐ | 🔥🔥🔥 | 40m |
+| 🟨  | 004 | Class File & Bytecode         | ⭐⭐  | 🔥🔥   | 30m |
+| 🟨  | 005 | Object Class                  | ⭐   | 🔥🔥🔥 | 20m |
+| 🟨  | 006 | String                        | ⭐⭐  | 🔥🔥🔥 | 40m |
+| 🟨   | 007 | String Pool                   | ⭐⭐⭐ | 🔥🔥🔥 | 40m |
 | ⬜   | 008 | StringBuilder vs StringBuffer | ⭐⭐  | 🔥🔥   | 30m |
 | ⬜   | 009 | equals() & hashCode()         | ⭐⭐⭐ | 🔥🔥🔥 | 60m |
 | ⬜   | 010 | == vs equals()                | ⭐⭐  | 🔥🔥🔥 | 20m |
@@ -60,18 +60,18 @@
 |⬜|029|HashSet|⭐⭐⭐|🔥🔥|40m|
 |⬜|030|TreeSet|⭐⭐⭐|🔥🔥|40m|
 
-|상태|번호|주제|난이도|출제|예상|
-|---|---|---|---|---|---|
-|⬜|031|HashMap|⭐⭐⭐⭐|🔥🔥🔥|90m|
-|⬜|032|Hash Function|⭐⭐⭐|🔥🔥|40m|
-|⬜|033|Hash Collision|⭐⭐⭐⭐|🔥🔥🔥|60m|
-|⬜|034|HashMap Resize|⭐⭐⭐⭐|🔥🔥🔥|60m|
-|⬜|035|Treeification (Red-Black Tree)|⭐⭐⭐⭐|🔥🔥|50m|
-|⬜|036|Hashtable vs HashMap|⭐⭐⭐|🔥🔥|40m|
-|⬜|037|ConcurrentHashMap|⭐⭐⭐⭐⭐|🔥🔥🔥|90m|
-|⬜|038|Iterator|⭐⭐|🔥🔥|30m|
-|⬜|039|Fail-Fast vs Fail-Safe Iterator|⭐⭐⭐⭐|🔥🔥🔥|50m|
-|⬜|040|Comparable vs Comparator|⭐⭐⭐|🔥🔥🔥|40m|
+| 상태  | 번호  | 주제                              | 난이도   | 출제     | 예상  |
+| --- | --- | ------------------------------- | ----- | ------ | --- |
+| ⬜   | 031 | HashMap                         | ⭐⭐⭐⭐  | 🔥🔥🔥 | 90m |
+| ⬜   | 032 | Hash Function                   | ⭐⭐⭐   | 🔥🔥   | 40m |
+| ⬜   | 033 | Hash Collision                  | ⭐⭐⭐⭐  | 🔥🔥🔥 | 60m |
+| ⬜   | 034 | HashMap Resize                  | ⭐⭐⭐⭐  | 🔥🔥🔥 | 60m |
+| ⬜   | 035 | Treeification (Red-Black Tree)  | ⭐⭐⭐⭐  | 🔥🔥   | 50m |
+| ⬜   | 036 | Hashtable vs HashMap            | ⭐⭐⭐   | 🔥🔥   | 40m |
+| ⬜   | 037 | ConcurrentHashMap               | ⭐⭐⭐⭐⭐ | 🔥🔥🔥 | 90m |
+| ⬜   | 038 | Iterator                        | ⭐⭐    | 🔥🔥   | 30m |
+| ⬜   | 039 | Fail-Fast vs Fail-Safe Iterator | ⭐⭐⭐⭐  | 🔥🔥🔥 | 50m |
+| ⬜   | 040 | Comparable vs Comparator        | ⭐⭐⭐   | 🔥🔥🔥 | 40m |
 
 |상태|번호|주제|난이도|출제|예상|
 |---|---|---|---|---|---|
@@ -481,4 +481,136 @@
 | ⬜   | 348 | Technical Leadership             | ⭐⭐⭐⭐  | 🔥🔥   | 60m  |
 | ⬜   | 349 | Backend Career Roadmap           | ⭐⭐⭐   | 🔥🔥   | 40m  |
 | ⬜   | 350 | Final Backend Interview Review   | ⭐⭐⭐⭐⭐ | 🔥🔥🔥 | 120m |
+# 08. Design Patterns (351~400)
 
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|🟨|351|Pattern vs Principle vs Architecture|⭐⭐⭐|🔥🔥🔥|40m|
+|⬜|352|SOLID Principles|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|353|Creational Patterns Overview|⭐⭐⭐|🔥🔥|40m|
+|⬜|354|Factory Method Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|355|Abstract Factory Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|356|Builder Pattern|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|357|Prototype Pattern|⭐⭐⭐|🔥🔥|40m|
+|⬜|358|Singleton Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|359|Object Pool Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|360|Dependency Injection Pattern|⭐⭐⭐⭐|🔥🔥🔥|70m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|361|Structural Patterns Overview|⭐⭐⭐|🔥🔥|40m|
+|⬜|362|Adapter Pattern|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|363|Bridge Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|364|Composite Pattern|⭐⭐⭐|🔥🔥|50m|
+|⬜|365|Decorator Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|366|Facade Pattern|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|367|Flyweight Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|368|Behavioral Patterns Overview|⭐⭐⭐|🔥🔥|40m|
+|⬜|369|Strategy Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|370|Template Method Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|371|Observer Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|372|Command Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|373|Chain of Responsibility Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|374|State Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|375|Mediator Pattern|⭐⭐⭐|🔥🔥|50m|
+|⬜|376|Memento Pattern|⭐⭐⭐|🔥|40m|
+|⬜|377|Visitor Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|378|Interpreter Pattern|⭐⭐⭐⭐|🔥|50m|
+|⬜|379|Null Object Pattern|⭐⭐⭐|🔥🔥|40m|
+|⬜|380|Specification Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|381|Repository Pattern|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|382|Unit of Work Pattern|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|383|Data Mapper Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|384|Active Record Pattern|⭐⭐⭐|🔥🔥|50m|
+|⬜|385|Identity Map Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|386|Service Layer Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|387|Domain Model vs Transaction Script|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|388|DTO Pattern|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|389|Gateway Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|390|Mapper and Assembler Patterns|⭐⭐⭐|🔥🔥|50m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|391|Value Object Pattern|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|392|Domain Event Pattern|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|393|Event Notification vs Event-Carried State Transfer|⭐⭐⭐⭐⭐|🔥🔥|80m|
+|⬜|394|Anti-Corruption Layer Pattern|⭐⭐⭐⭐⭐|🔥🔥🔥|80m|
+|⬜|395|Strangler Fig Pattern|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|396|Sidecar Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|397|Ambassador Pattern|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|398|Leader Election Pattern|⭐⭐⭐⭐⭐|🔥🔥🔥|80m|
+|⬜|399|Pattern Selection and Composition|⭐⭐⭐⭐⭐|🔥🔥🔥|90m|
+|⬜|400|Anti-Patterns and Refactoring Strategies|⭐⭐⭐⭐⭐|🔥🔥🔥|90m|
+
+# 09. Algorithm & Coding Interview (401~450)
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|401|Time and Space Complexity Analysis|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|402|Amortized Analysis|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|403|Recursion and Call Stack|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|404|Divide and Conquer|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|405|Sorting Algorithm Trade-offs|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|406|Insertion and Selection Sort|⭐⭐|🔥🔥|40m|
+|⬜|407|Merge Sort|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|408|Quick Sort|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|409|Heap Sort|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|410|Counting Sort and Radix Sort|⭐⭐⭐⭐|🔥🔥|60m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|411|Stable Sort and In-Place Sort|⭐⭐⭐|🔥🔥|50m|
+|⬜|412|Binary Search and Boundary Conditions|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|413|Two Pointers|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|414|Sliding Window|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|415|Prefix Sum and Difference Array|⭐⭐⭐|🔥🔥|50m|
+|⬜|416|Hash-Based Problem Solving|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|417|Fast and Slow Pointer Technique|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|418|Stack and Monotonic Stack|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|419|Monotonic Queue|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|420|Heap and Top-K Problems|⭐⭐⭐⭐|🔥🔥🔥|60m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|421|Tree Traversal|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|422|Binary Search Tree Algorithms|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|423|Balanced Tree Operations|⭐⭐⭐⭐|🔥🔥|70m|
+|⬜|424|Trie Algorithms|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|425|Graph Representation and Traversal Design|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|426|Breadth-First Search (BFS)|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|427|Depth-First Search (DFS)|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|428|Topological Sort|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|429|Union-Find|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|430|Dijkstra Algorithm|⭐⭐⭐⭐|🔥🔥🔥|70m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|431|Bellman-Ford Algorithm|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|432|Floyd-Warshall Algorithm|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|433|Minimum Spanning Tree|⭐⭐⭐⭐|🔥🔥|70m|
+|⬜|434|Backtracking|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|435|Greedy Algorithms|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|436|Dynamic Programming Fundamentals|⭐⭐⭐⭐|🔥🔥🔥|70m|
+|⬜|437|Knapsack Problems|⭐⭐⭐⭐|🔥🔥|70m|
+|⬜|438|Longest Increasing Subsequence|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|439|Longest Common Subsequence|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|440|Interval Algorithms|⭐⭐⭐⭐|🔥🔥🔥|60m|
+
+|상태|번호|주제|난이도|출제|예상|
+|---|---|---|---|---|---|
+|⬜|441|Bit Manipulation|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|442|KMP String Matching|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|443|Rabin-Karp and Rolling Hash|⭐⭐⭐⭐|🔥🔥|60m|
+|⬜|444|Palindrome Algorithms|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|445|Matrix and Grid Traversal|⭐⭐⭐|🔥🔥🔥|50m|
+|⬜|446|External Sorting for Large Data|⭐⭐⭐⭐⭐|🔥🔥🔥|80m|
+|⬜|447|Streaming Top-K and Heavy Hitters|⭐⭐⭐⭐⭐|🔥🔥🔥|80m|
+|⬜|448|Parallel Algorithm Trade-offs|⭐⭐⭐⭐⭐|🔥🔥|80m|
+|⬜|449|Coding Interview Testing Strategy|⭐⭐⭐⭐|🔥🔥🔥|60m|
+|⬜|450|Backend Coding Interview Comprehensive Review|⭐⭐⭐⭐⭐|🔥🔥🔥|120m|

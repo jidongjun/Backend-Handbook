@@ -89,7 +89,7 @@
 
 |상태|번호|주제|난이도|출제|예상|
 |---|---|---|---|---|---|
-|⬜|051|Process vs Thread|⭐⭐|🔥🔥🔥|40m|
+|🟨|051|Process vs Thread|⭐⭐|🔥🔥🔥|40m|
 |⬜|052|Thread Lifecycle|⭐⭐|🔥🔥|30m|
 |⬜|053|Thread Creation (extends vs Runnable)|⭐⭐|🔥🔥|30m|
 |⬜|054|Callable & Future|⭐⭐⭐|🔥🔥|40m|
@@ -614,3 +614,4 @@
 |⬜|448|Parallel Algorithm Trade-offs|⭐⭐⭐⭐⭐|🔥🔥|80m|
 |⬜|449|Coding Interview Testing Strategy|⭐⭐⭐⭐|🔥🔥🔥|60m|
 |⬜|450|Backend Coding Interview Comprehensive Review|⭐⭐⭐⭐⭐|🔥🔥🔥|120m|
+

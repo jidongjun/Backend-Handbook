@@ -33,6 +33,7 @@
 - [[01-Java-Core/005-Object-Class|Object Class]] — Java 객체 계층의 루트와 공통 메서드 계약
 - [[01-Java-Core/006-String|String]] — 불변 문자열, 값 비교, 인코딩과 운영 이슈
 - [[01-Java-Core/007-String-Pool|String Pool]] — 문자열 리터럴 공유, intern 동작과 운영상 주의점
+- [[01-Java-Core/051-Process-vs-Thread|Process vs Thread]] — JVM 프로세스와 스레드 실행 단위, 운영 진단 관점
 
 ## 02 Spring
 
@@ -76,6 +77,7 @@
 
 ## Recently Added
 
+- [[01-Java-Core/051-Process-vs-Thread|Process vs Thread]] — JVM 프로세스와 스레드 실행 단위, 운영 진단 관점
 - [[01-Java-Core/007-String-Pool|String Pool]] — 문자열 리터럴 공유, intern 동작과 운영상 주의점
 - [[01-Java-Core/006-String|String]] — 불변 문자열, 값 비교, 인코딩과 운영 이슈
 - [[01-Java-Core/005-Object-Class|Object Class]] — Java 객체 계층의 루트와 공통 메서드 계약

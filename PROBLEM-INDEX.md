@@ -30,8 +30,8 @@
 | 🟨  | 005 | Object Class                  | ⭐   | 🔥🔥🔥 | 20m |
 | 🟨  | 006 | String                        | ⭐⭐  | 🔥🔥🔥 | 40m |
 | 🟨   | 007 | String Pool                   | ⭐⭐⭐ | 🔥🔥🔥 | 40m |
-| ⬜   | 008 | StringBuilder vs StringBuffer | ⭐⭐  | 🔥🔥   | 30m |
-| ⬜   | 009 | equals() & hashCode()         | ⭐⭐⭐ | 🔥🔥🔥 | 60m |
+| 🟨   | 008 | StringBuilder vs StringBuffer | ⭐⭐  | 🔥🔥   | 30m |
+| 🟨   | 009 | equals() & hashCode()         | ⭐⭐⭐ | 🔥🔥🔥 | 60m |
 | ⬜   | 010 | == vs equals()                | ⭐⭐  | 🔥🔥🔥 | 20m |
 
 |상태|번호|주제|난이도|출제|예상|
@@ -614,4 +614,6 @@
 |⬜|448|Parallel Algorithm Trade-offs|⭐⭐⭐⭐⭐|🔥🔥|80m|
 |⬜|449|Coding Interview Testing Strategy|⭐⭐⭐⭐|🔥🔥🔥|60m|
 |⬜|450|Backend Coding Interview Comprehensive Review|⭐⭐⭐⭐⭐|🔥🔥🔥|120m|
+
+
 

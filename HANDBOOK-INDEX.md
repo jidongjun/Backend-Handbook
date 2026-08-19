@@ -33,6 +33,8 @@
 - [[01-Java-Core/005-Object-Class|Object Class]] — Java 객체 계층의 루트와 공통 메서드 계약
 - [[01-Java-Core/006-String|String]] — 불변 문자열, 값 비교, 인코딩과 운영 이슈
 - [[01-Java-Core/007-String-Pool|String Pool]] — 문자열 리터럴 공유, intern 동작과 운영상 주의점
+- [[01-Java-Core/008-StringBuilder-vs-StringBuffer|StringBuilder vs StringBuffer]] — 가변 문자열 누적, 동기화 차이와 운영 성능 고려
+- [[01-Java-Core/009-equals-and-hashCode|equals() & hashCode()]] — 객체 동등성 계약, 해시 컬렉션과 운영 버그
 - [[01-Java-Core/051-Process-vs-Thread|Process vs Thread]] — JVM 프로세스와 스레드 실행 단위, 운영 진단 관점
 
 ## 02 Spring
@@ -77,12 +79,12 @@
 
 ## Recently Added
 
+- [[01-Java-Core/009-equals-and-hashCode|equals() & hashCode()]] — 객체 동등성 계약, 해시 컬렉션과 운영 버그
+- [[01-Java-Core/008-StringBuilder-vs-StringBuffer|StringBuilder vs StringBuffer]] — 가변 문자열 누적, 동기화 차이와 운영 성능 고려
 - [[01-Java-Core/051-Process-vs-Thread|Process vs Thread]] — JVM 프로세스와 스레드 실행 단위, 운영 진단 관점
 - [[01-Java-Core/007-String-Pool|String Pool]] — 문자열 리터럴 공유, intern 동작과 운영상 주의점
 - [[01-Java-Core/006-String|String]] — 불변 문자열, 값 비교, 인코딩과 운영 이슈
 - [[01-Java-Core/005-Object-Class|Object Class]] — Java 객체 계층의 루트와 공통 메서드 계약
 - [[01-Java-Core/004-Class-File-and-Bytecode|Class File & Bytecode]] — JVM Class File 구조, 바이트코드 명령어와 운영 진단
 - [[01-Java-Core/003-Java-Compilation-Process|Java 컴파일 과정]] — 소스 분석부터 Class File 생성, 빌드 호환성과 운영 진단
-- [[01-Java-Core/002-JVM-vs-JRE-vs-JDK|JVM vs JRE vs JDK]] — 실행 머신, 런타임 환경, 개발 도구와 현대 배포 모델의 차이
-- [[01-Java-Core/001-Java-Architecture|Java 아키텍처]] — Java 플랫폼의 컴파일, 실행 계층과 운영 관점
 

@@ -104,15 +104,15 @@ Process는 애플리케이션 전체의 자원 경계다. Thread는 그 안에�
 
 ## 5. Process와 Thread 비교
 
-| 구분 | Process | Thread |
-|---|---|---|
-| 기본 의미 | 실행 중인 프로그램 인스턴스 | Process 내부 실행 흐름 |
-| 자원 소유 | 주소 공간과 OS 자원 소유 | Process 자원을 공유 |
-| 메모리 | 독립 주소 공간 | Heap 공유, Stack 개별 보유 |
-| 생성 비용 | 상대적으로 큼 | 상대적으로 작음 |
-| 통신 방식 | IPC, Socket, Pipe 등 | 공유 메모리, 동기화 도구 |
-| 장애 영향 | 종료 시 애플리케이션 인스턴스 종료 | 개별 Thread 실패는 범위가 작을 수 있음 |
-| Java 예 | JVM Process | `Thread`, executor worker |
+| 구분     | Process             | Thread                    |
+| ------ | ------------------- | ------------------------- |
+| 기본 의미  | 실행 중인 프로그램 인스턴스     | Process 내부 실행 흐름          |
+| 자원 소유  | 주소 공간과 OS 자원 소유     | Process 자원을 공유            |
+| 메모리    | 독립 주소 공간            | Heap 공유, Stack 개별 보유      |
+| 생성 비용  | 상대적으로 큼             | 상대적으로 작음                  |
+| 통신 방식  | IPC, Socket, Pipe 등 | 공유 메모리, 동기화 도구            |
+| 장애 영향  | 종료 시 애플리케이션 인스턴스 종료 | 개별 Thread 실패는 범위가 작을 수 있음 |
+| Java 예 | JVM Process         | `Thread`, executor worker |
 
 ## 6. Java 17 예제
 
